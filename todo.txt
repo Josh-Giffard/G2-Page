@@ -1,0 +1,57 @@
+Moved all image files from wp-content to an image folder, and changed all directories accordingly.
+Moved the css over to a scripts folder, and changed all directories accordingly.
+Used PurgeCSS to remove redundant css code from bootstrap.css, style.css, style.min.css and slick.css. This was all compiled into purged.css.
+Formatted all files so they are all rendered properly.
+Converted images to webp - started the process of updating the file paths.
+Made the footer white (Dave's request).
+Moved all js scripts across to the scripts/js folder.
+Added Pricing page.
+TODO
+
+Various optimisation methods
+    Converting images to webp
+    Removing redundant js code
+Remove redundant files
+Need anti-aliasing on the footer image - removes jagged lines.
+Add content to pricing page
+
+
+css for 
+ .collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+tr.collapse.show {
+  display: table-row;
+}
+
+tbody.collapse.show {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
